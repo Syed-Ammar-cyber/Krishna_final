@@ -319,14 +319,13 @@
     </div>
 
     <main>
-        <section class="contact-section section-padding scroll-fade">
+        <section class="contact-section section-padding">
             <div class="container">
-                <h1 class="section-title animate-on-scroll">Contact Us</h1>
-                <p class="text-center animate-on-scroll" style="margin-bottom: 2rem; color: var(--text-secondary); font-size: 1.5rem; font-weight: 500;">Get in touch with our team</p>
+                <h1 class="section-title">Contact Us</h1>
+                <p class="text-center" style="margin-bottom: 2rem; color: var(--text-secondary); font-size: 1.5rem; font-weight: 500;">Get in touch with our team</p>
                 <div class="contact-grid">
-
                     <!-- Contact Form -->
-                    <div class="contact-form animate-on-scroll">
+                    <div class="contact-form">
                         <form action="https://sheetdb.io/api/v1/852nkde278ab0" method="post" id="sheetdb-form">
                             <div class="form-group">
                                 <label for="name">Name</label>
@@ -363,19 +362,19 @@
 
                     <!-- Contact Information -->
                     <div class="contact-info">
-                        <div class="info-group animate-on-scroll">
+                        <div class="info-group">
                             <h3>Visit Us</h3>
-                            <p>C-50 Royal City,<br>
-                               Bijnor Road<br>
-                               Lucknow, India</p>
+                            <p>123 Business Avenue<br>
+                               Corporate District<br>
+                               Mumbai, India</p>
                         </div>
-                        <div class="info-group animate-on-scroll">
+                        <div class="info-group">
                             <h3>Contact Information</h3>
                             <p>Email: info.kripvtltd@gmail.com<br>
-                               Phone: +91 7275025581</p>
+                               Phone: +91 (123) 456-7890</p>
                         </div> 
                         <!-- CreTech Studios -->
-                        <div class="info-group animate-on-scroll" style="background-color: var(--card-bg); padding: 1.5rem; border-radius: 0.5rem; border: 1px solid rgba(0, 35, 102, 0.1);">
+                        <div class="info-group" style="background-color: var(--card-bg); padding: 1.5rem; border-radius: 0.5rem; border: 1px solid rgba(0, 35, 102, 0.1);">
                             <h3 style="color: var(--primary); margin-bottom: 1rem;">CreTech Studios</h3>
                             <p style="margin-bottom: 1rem;">We are a full-service production company specializing in:</p>
                             <ul style="list-style-type: none; padding-left: 0;">
@@ -397,7 +396,6 @@
         </section>
     </main>
 
-    <script src="script.js"></script>
     <script>
         // Mobile menu functionality
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
@@ -422,25 +420,6 @@
                 document.body.style.overflow = '';
             });
         });
-
-        // Scroll animation functionality
-        const animateElements = document.querySelectorAll('.animate-on-scroll');
-
-        function checkScroll() {
-            animateElements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-
-                if (elementTop < window.innerHeight - elementVisible) {
-                    element.classList.add('visible');
-                }
-            });
-        }
-
-        // Initial check for elements in view
-        window.addEventListener('load', checkScroll);
-        // Check on scroll
-        window.addEventListener('scroll', checkScroll);
     </script>
 </body>
 </html> 
